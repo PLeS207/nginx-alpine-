@@ -36,7 +36,10 @@ location /soft {
               }
 location ~* \.(gif|jpg|png)$ {
         return 405;
-              }              
+              }   
+location ^~ /imgs {
+        return 404;
+              }               
         }
 }
 
