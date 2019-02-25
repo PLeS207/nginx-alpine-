@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create nginx configuration
-cat > etc/nginx/nginx.conf << EOF
+cat > /etc/nginx/nginx.conf << EOF
 
 daemon off;
 worker_processes 8;
@@ -47,4 +47,4 @@ EOF
 
 # Start nginx
 
-nginx -c /nginx.conf
+nginx -c /etc/nginx/nginx.conf
